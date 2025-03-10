@@ -5,7 +5,7 @@ const Sidebar: React.FC = () => {
   const location = useLocation();
   
   const apps = [
-    { id: 'app1', icon: '📱', path: '/app1' },
+    { id: 'noise', name: '騒音測定', icon: '🔊', path: '/noise' },
     { id: 'app2', icon: '🔧', path: '/app2' },
     { id: 'app3', icon: '🎮', path: '/app3' },
   ];
@@ -27,6 +27,7 @@ const Sidebar: React.FC = () => {
           className={`w-12 h-12 rounded-full bg-gray-700 flex items-center justify-center text-white hover:bg-gray-600 transition-colors ${
             location.pathname === app.path ? 'ring-2 ring-blue-500' : ''
           }`}
+          title={app.name}
         >
           <span className="text-2xl">{app.icon}</span>
         </Link>
