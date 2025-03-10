@@ -4,7 +4,7 @@ import Sidebar from './components/Sidebar';
 import Content from './components/Content';
 import Home from './components/apps/Home';
 import NoiseApp from './components/apps/NoiseApp';
-import App2 from './components/apps/App2';
+import ImageResizer from './components/apps/ImageResizer';
 import App3 from './components/apps/App3';
 
 const App: React.FC = () => {
@@ -16,7 +16,7 @@ const App: React.FC = () => {
           <Route path="/" element={<Content />}>
             <Route index element={<Home />} />
             <Route path="noise" element={<NoiseApp />} />
-            <Route path="app2" element={<App2 />} />
+            <Route path="image-resizer" element={<ImageResizer />} />
             <Route path="app3" element={<App3 />} />
           </Route>
         </Routes>
