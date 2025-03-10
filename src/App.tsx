@@ -6,6 +6,7 @@ import Home from './components/apps/Home';
 import NoiseApp from './components/apps/NoiseApp';
 import ImageResizer from './components/apps/ImageResizer';
 import AirHorn from './components/apps/AirHorn';
+import SpeedMeter from './components/apps/SpeedMeter';
 import App3 from './components/apps/App3';
 
 const App: React.FC = () => {
@@ -19,6 +20,7 @@ const App: React.FC = () => {
             <Route path="noise" element={<NoiseApp />} />
             <Route path="image-resizer" element={<ImageResizer />} />
             <Route path="airhorn" element={<AirHorn />} />
+            <Route path="speedmeter" element={<SpeedMeter />} />
             <Route path="app3" element={<App3 />} />
           </Route>
         </Routes>

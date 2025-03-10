@@ -8,6 +8,7 @@ const Sidebar: React.FC = () => {
     { id: 'noise', name: '騒音測定', icon: '🔊', path: '/noise' },
     { id: 'image-resizer', name: '画像リサイズ', icon: '🖼️', path: '/image-resizer' },
     { id: 'airhorn', name: 'エアホーン', icon: '📢', path: '/airhorn' },
+    { id: 'speedmeter', name: '速度測定', icon: '🚗', path: '/speedmeter' },
     { id: 'app3', icon: '🎮', path: '/app3' },
   ];
 
