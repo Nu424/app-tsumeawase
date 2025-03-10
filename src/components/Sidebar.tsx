@@ -7,6 +7,7 @@ const Sidebar: React.FC = () => {
   const apps = [
     { id: 'noise', name: '騒音測定', icon: '🔊', path: '/noise' },
     { id: 'image-resizer', name: '画像リサイズ', icon: '🖼️', path: '/image-resizer' },
+    { id: 'airhorn', name: 'エアホーン', icon: '📢', path: '/airhorn' },
     { id: 'app3', icon: '🎮', path: '/app3' },
   ];
 
