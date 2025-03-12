@@ -11,8 +11,9 @@ import FFTSpectrum from './components/apps/FFTSpectrum';
 import App3 from './components/apps/App3';
 
 const App: React.FC = () => {
+  const baseUrl = import.meta.env.BASE_URL;
   return (
-    <Router basename='/app-tsumeawase'>
+    <Router basename={baseUrl}>
       <div className="flex min-h-screen bg-gray-100">
         <Sidebar />
         <Routes>

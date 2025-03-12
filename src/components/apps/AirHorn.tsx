@@ -1,10 +1,11 @@
 import React, { useRef } from 'react';
 
 // 音源の定義
+const baseUrl = import.meta.env.BASE_URL;
 const SOUNDS = [
-  { id: 'airhorn', label: 'エアホーン', file: '/sounds/airhorn.mp3', icon: '📢' },
-  { id: 'beep', label: 'ビープ音', file: '/sounds/beep.mp3', icon: '🔔' },
-  { id: 'bell', label: 'ベル', file: '/sounds/bell.mp3', icon: '🛎️' },
+  { id: 'airhorn', label: 'エアホーン', file: baseUrl + 'sounds/airhorn.mp3', icon: '📢' },
+  { id: 'beep', label: 'ビープ音', file: baseUrl + 'sounds/beep.mp3', icon: '🔔' },
+  { id: 'bell', label: 'ベル', file: baseUrl + 'sounds/bell.mp3', icon: '🛎️' },
 ];
 
 const AirHorn: React.FC = () => {
@@ -25,7 +26,7 @@ const AirHorn: React.FC = () => {
   return (
     <div className="p-6">
       <h2 className="text-2xl font-bold mb-6">エアホーン</h2>
-      
+
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         {SOUNDS.map(sound => (
           <div key={sound.id} className="relative">
