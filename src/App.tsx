@@ -7,6 +7,7 @@ import NoiseApp from './components/apps/NoiseApp';
 import ImageResizer from './components/apps/ImageResizer';
 import AirHorn from './components/apps/AirHorn';
 import SpeedMeter from './components/apps/SpeedMeter';
+import FFTSpectrum from './components/apps/FFTSpectrum';
 import App3 from './components/apps/App3';
 
 const App: React.FC = () => {
@@ -18,6 +19,7 @@ const App: React.FC = () => {
           <Route path="/" element={<Content />}>
             <Route index element={<Home />} />
             <Route path="noise" element={<NoiseApp />} />
+            <Route path="fft-spectrum" element={<FFTSpectrum />} />
             <Route path="image-resizer" element={<ImageResizer />} />
             <Route path="airhorn" element={<AirHorn />} />
             <Route path="speedmeter" element={<SpeedMeter />} />
