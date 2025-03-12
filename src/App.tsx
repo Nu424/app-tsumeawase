@@ -12,7 +12,7 @@ import App3 from './components/apps/App3';
 
 const App: React.FC = () => {
   return (
-    <Router>
+    <Router basename='/app-tsumeawase'>
       <div className="flex min-h-screen bg-gray-100">
         <Sidebar />
         <Routes>
